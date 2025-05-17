@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --color-dark: #283106;
+  --color-light: #f8dec8;
+  --color-base: #ebecd0;
+  --color-accent: #cc7d45;
+  --color-muted: #777e5c;
+  --color-secondary: #be9874;
+  --color-purple: #bc92b8;
+
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Cardo", serif;
+  --letter-spacing: 0.64px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-body);
+}
+
+.cta {
+  text-decoration: none;
+  padding: 12px 24px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.cta.light {
+  background: var(--color-base);
+  color: var(--color-dark);
+}
+.cta.dark {
+  background: var(--color-light);
+  color: var(--color-dark);
+}
+
+body {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.home {
+  max-width: 600px;
+  height: 807px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+    url(./images/main.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 25% center;
+  position: relative;
+}
+
+.home .logo {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.home .text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 529px;
+  text-align: center;
+  letter-spacing: var(--letter-spacing);
+  color: var(--color-base);
+}
+
+.text-container h2 {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: var(--font-heading);
+}
+
+.text-container span {
+  font-size: 36px;
+  font-weight: 400;
+  font-style: italic;
+  margin-top: 12px;
+}
+
+.text-container p {
+  width: 519px;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 20px 0 70px 0;
+}
+
+.welcome-section {
+  padding: 80px 40px;
+  background: var(--color-base);
+}
+
+.welcome-container {
+  max-width: 519px;
+  color: var(--color-dark);
+  letter-spacing: var(--letter-spacing);
+  line-height: 30px;
+}
+
+.welcome-container h2 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.welcome-container h2 span {
+  color: var(--color-accent);
+}
+
+.welcome-container p {
+  font-size: 16px;
+  padding: 16px 0;
+}
+
+.welcome-container .signature {
+  width: 120px;
+  font-weight: 700;
+}
+
+.features-section {
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  background-color: #d8e0bc;
+}
+
+.features-section .heading {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: center;
+}
+
+.heading h2 {
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--color-dark);
+  letter-spacing: var(--letter-spacing);
+}
+
+.features-container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  width: 529px;
+  margin: 0 auto;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.feature .image {
+  width: 250px;
+  height: 234px;
+}
+
+.feature .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.text-content {
+  max-width: 230px;
+  letter-spacing: var(--letter-spacing);
+}
+
+.text-content h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-top: 20px;
+}
+
+.text-content p {
+  font-size: 14px;
+  color: var(--color-muted);
+  padding-top: 10px;
+}
+
+.features-container .feature:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.event-container {
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  background-color: var(--color-base);
+}
+
+.event-container .heading {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: center;
+}
+
+.event-container .event {
+  max-width: 524px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  letter-spacing: var(--letter-spacing);
+}
+
+.event h3 {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: var(--color-secondary);
+  text-align: center;
+}
+
+.event .box {
+  width: 524px;
+  height: 231px;
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  border: 1px solid var(--color-secondary);
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.box .image {
+  width: 210px;
+  height: 229px;
+  overflow: hidden;
+}
+
+.box .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px 0 0 12px;
+  object-fit: cover;
+}
+
+.box .text {
+  width: 252px;
+  padding: 40px 0;
+  letter-spacing: var(--letter-spacing);
+}
+
+.text h2 {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--font-heading);
+  color: var(--color-dark);
+}
+
+.text h4 {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-secondary);
+  padding-top: 10px;
+}
+
+.text p {
+  font-size: 14px;
+  color: var(--color-muted);
+  line-height: 20px;
+  margin-top: 20px;
+}
+
+.event-container .event:nth-of-type(3) h3 {
+  color: var(--color-muted);
+}
+
+.event-container .event:nth-of-type(4) h3,
+.event-container .event:nth-of-type(4) h4 {
+  color: var(--color-purple);
+}
+
+.explore {
+  padding: 80px 0 100px 0;
+  background: var(--color-accent);
+  text-align: center;
+  letter-spacing: var(--letter-spacing);
+}
+
+.explore h2 {
+  font-size: 28px;
+  font-weight: 400;
+  font-family: var(--font-heading);
+  padding-top: 40px;
+  color: var(--color-light);
+}
+
+.explore p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-light);
+  padding: 20px 0 60px;
+}
+
+footer {
+  background: var(--color-dark);
+  padding: 40px 0 20px 0;
+}
+
+footer .footer-container {
+  max-width: 529px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--color-muted);
+}
+
+.footer-container .social-media {
+  display: flex;
+  gap: 16px;
+}
+
+footer .footer-text {
+  max-width: 524px;
+  margin: 0 auto;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer-text p {
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: var(--letter-spacing);
+  color: var(--color-light);
+  margin-bottom: 10px;
+}
+
+.footer-text a {
+  color: var(--color-light);
+  text-decoration: underline;
+}
