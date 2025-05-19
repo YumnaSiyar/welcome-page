@@ -128,7 +128,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 60px;
-  background-color: #d8e0bc;
+  background-color: rgba(40, 49, 6, 0.12);
 }
 
 .features-section .heading {
